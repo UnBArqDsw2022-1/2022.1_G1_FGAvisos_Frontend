@@ -24,3 +24,5 @@ export const Tema = {
       $secundariaEscura: "#37474f"
     },
   };
+
+  export default Tema;
