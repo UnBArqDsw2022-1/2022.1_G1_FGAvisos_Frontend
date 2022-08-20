@@ -3,13 +3,14 @@ import Titulo from "./styles.js";
 
 interface TituloProps {
   titulo: string;
-  tamanho?: string;
+  tamanho: string;
+  cor: string;
 }
 
-const TituloGenerico: FC<TituloProps> = ({ titulo, tamanho }) => {
+const TituloGenerico: FC<TituloProps> = ({...props}) => {
   return (
     <>
-      <Titulo>{titulo}</Titulo>
+      <Titulo {...props}>{props.titulo}</Titulo>
     </>
   );
 };

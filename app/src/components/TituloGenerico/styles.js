@@ -5,7 +5,8 @@ const Titulo = styled.span`
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  color: #000000;
+  color: ${(props) => props.cor};
+  font-size: ${(props) => props.tamanho};
 `;
 
 export default Titulo;
