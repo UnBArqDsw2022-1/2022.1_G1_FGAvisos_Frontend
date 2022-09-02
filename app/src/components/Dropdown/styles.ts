@@ -1,3 +1,3 @@
 import styled from "styled-components";
 
-export const DropdownStyled = styled.select``;
+export const Dropdown = styled.select``;

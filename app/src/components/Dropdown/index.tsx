@@ -1,14 +1,27 @@
 import React from "react";
+import Dropdown from './style';
 
-export const Dropdown = () => {
+interface DropDownProps {
+  OnChangeFunction?: () => void;
+  optionList: string[];
+  value: string;
+}
+
+const DropdownComponent = ({OnChangeFunction, optionList, value}: DropDownProps) => {
   return (
-    <form action="">
-      <select name="dropdown">
-        <option value="turma1">Turma1</option>
-        <option value="turma2">Turma2</option>
-        <option value="turma3">Turma3</option>
-        <option value="turma4">Turma4</option>
-      </select>
-    </form>
-  );
-};
+    <>
+  <Dropdown
+    as="select"
+    onChange={OnChangeFunction}
+    value={value}
+  >
+    {optionList?.map((optionListItem, index) => (
+      <option key={index}>
+        {optionListItem}
+      </option>
+    ))}
+  </Dropdown>
+  </>
+)};
+
+export default DropdownComponent;
