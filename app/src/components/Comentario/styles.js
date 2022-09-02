@@ -5,6 +5,7 @@ const Container = styled.div`
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 `;
 
 const TituloContainer = styled.div`
