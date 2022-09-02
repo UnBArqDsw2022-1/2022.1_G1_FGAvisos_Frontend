@@ -3,8 +3,10 @@ import Tema from '../../utils/Tema';
 
 import TituloGenerico from '../TituloGenerico/index'
 
+import * as Styles from "./styles.js";
+
 interface TituloProps {
-  titulo: string;
+  nomeAutor: string;
   texto: string;
   hora: string;
 }
@@ -12,7 +14,13 @@ interface TituloProps {
 const Comentario: FC<TituloProps> = ({...props}) => {
   return (
     <>
-      <TituloGenerico titulo={props.titulo} tamanho={Tema.fonte.tamanhos.grande} cor={Tema.colors.$primariaEscura}></TituloGenerico>
+        <Styles.Container>
+            <Styles.TituloContainer>
+                <TituloGenerico titulo={props.nomeAutor} tamanho={Tema.fonte.tamanhos.pequena} cor='black'></TituloGenerico>
+                <span>{props.hora}</span>
+            </Styles.TituloContainer>
+            <Styles.Texto>{props.texto}</Styles.Texto>
+        </Styles.Container>        
     </>
   );
 };
