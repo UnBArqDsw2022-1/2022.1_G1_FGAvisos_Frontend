@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Tema} from '../../utils/Tema';
 
 interface ButtonProps{
     backgroundColor: string;
@@ -15,4 +16,9 @@ export const ButtonStyle = styled.button<ButtonProps>`
     text-align: center;
     height: inherit;
     padding: 7px 0px 7px 0px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: ${Tema.colors.$primariaEscura};
+    }
 `;
