@@ -1,6 +1,6 @@
 export const Tema = {
     fonte: {
-      familia: "Roboto",
+      familia: "Roboto, sans-serif ",
       clara: 300,
       normal: 400,
       meioNegrito: 500,
