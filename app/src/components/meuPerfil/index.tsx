@@ -1,6 +1,6 @@
 import React, { FC, useState, Dispatch } from "react";
 import MeuPerfilLogo from "../../assets/MeuPerfilLogo.svg";
-import {ConteinerMaior, Perfil, TextoEscolha, Editar, IconePerfil} from  "./styles"; 
+import {ConteinerMaior, Perfil, TextoEscolha, Editar, IconePerfil} from  './styles'; 
 import { Tema } from "../../utils/Tema";
 
 
