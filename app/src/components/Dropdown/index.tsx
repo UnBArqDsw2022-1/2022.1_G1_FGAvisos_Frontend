@@ -1,5 +1,5 @@
 import React from "react";
-import Dropdown from './style';
+import {Dropdown} from './styles';
 
 interface DropDownProps {
   OnChangeFunction?: () => void;
@@ -15,6 +15,7 @@ const DropdownComponent = ({OnChangeFunction, optionList, value}: DropDownProps)
     onChange={OnChangeFunction}
     value={value}
   >
+    <option value={value} disabled selected hidden>{value}</option>
     {optionList?.map((optionListItem, index) => (
       <option key={index}>
         {optionListItem}

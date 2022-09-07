@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Dropdown } from "./components/Dropdown/index";
+import DropdownComponent from "./components/Dropdown";
 
 function App() {
   return (
     <>
-      <Dropdown />
+      <DropdownComponent optionList={['opcao1', 'opcao2', 'opcao3']} value={'Escolha uma turma'}/>
     </>
   );
 }
