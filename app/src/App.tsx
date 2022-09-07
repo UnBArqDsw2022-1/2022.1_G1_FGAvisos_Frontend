@@ -6,7 +6,7 @@ import DropdownComponent from "./components/Dropdown";
 function App() {
   return (
     <>
-      <DropdownComponent optionList={['opcao1', 'opcao2', 'opcao3']} value={'Escolha uma turma'}/>
+      <DropdownComponent optionList={[]} value={'Placeholder'}/>
     </>
   );
 }
