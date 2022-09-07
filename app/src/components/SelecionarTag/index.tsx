@@ -38,7 +38,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 colorFont={"white"}
                 width={140}
                 height={30}
-              ></Button>
+              />
             </div>
           </Styles.ButtonContainer>
 
@@ -57,7 +57,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 colorFont={"white"}
                 width={140}
                 height={30}
-              ></Button>
+              />
             </div>
           </Styles.ButtonContainer>
 
@@ -80,7 +80,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 colorFont={"white"}
                 width={140}
                 height={30}
-              ></Button>
+              />
             </div>
           </Styles.ButtonContainer>
 
@@ -103,7 +103,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 colorFont={"white"}
                 width={140}
                 height={30}
-              ></Button>
+              />
             </div>
           </Styles.ButtonContainer>
 
@@ -126,7 +126,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 colorFont={"black"}
                 width={140}
                 height={30}
-              ></Button>
+              />
             </div>
           </Styles.ButtonContainer>
         </Styles.TagsContainer>
