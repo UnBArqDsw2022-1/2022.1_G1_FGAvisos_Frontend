@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import BarraNavegacao from './components/barraNavegacao';
+import BarraNavegacao from './components/BarraNavegacao';
 
 function App() {
   return (
