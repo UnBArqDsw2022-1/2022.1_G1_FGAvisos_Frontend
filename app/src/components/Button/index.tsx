@@ -6,7 +6,7 @@ interface ButtonProps {
     text: string;
     backgroundColor: string;
     colorFont: string;
-    width: number;
+    width?: number;
 }
 
 const Button: React.FC<ButtonProps> = ({...props}) => 
