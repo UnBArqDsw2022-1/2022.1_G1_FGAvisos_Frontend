@@ -1,7 +1,6 @@
 import React from 'react';
 import {Corpo, CaixaLogin, Conteudo, CampoUsuario, CampoSenha, BotaoConfirmar} from './styles';
 import Footer from '../../components/Footer';
-import BarraNavegacao from '../../components/BarraNavegacao';
 import Input from '../../components/Input';
 import Tema from '../../utils/Tema';
 import Button from '../../components/Button';
@@ -14,7 +13,6 @@ function PaginaLogin({...props}){
     return(
 
         <Corpo>
-            <BarraNavegacao></BarraNavegacao>
 
             <Conteudo>
                 <CaixaLogin>
