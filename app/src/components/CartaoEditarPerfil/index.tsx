@@ -23,7 +23,7 @@ function CartaoEditarPerfil(){
                         text={"Nome"} 
                         backgroundColor={"white"} 
                         colorFont={"black"} 
-                        width={358}
+                        width="358px"
                     ></Input>
                 </CampoEdicao>
 
@@ -32,7 +32,7 @@ function CartaoEditarPerfil(){
                         text={"Senha"} 
                         backgroundColor={"white"} 
                         colorFont={"black"} 
-                        width={358}
+                        width="358px"
                     ></Input>
                 </CampoEdicao>
 
@@ -41,7 +41,7 @@ function CartaoEditarPerfil(){
                         text={"Confirmar senha"} 
                         backgroundColor={"white"} 
                         colorFont={"black"} 
-                        width={358}
+                        width="358px"
                     ></Input>
                 </CampoEdicao>
 
