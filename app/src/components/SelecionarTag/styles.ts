@@ -30,4 +30,29 @@ const Divider = styled.div`
   background-color: black;
 `;
 
-export { AbrirTags, Container, TagsContainer, Divider };
+const ButtonContainer = styled.div`
+  position: relative;
+  display: flex;
+`;
+
+const SinalSelecionadoContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+const SinalSelecionado = styled.div`
+  position: relative;
+  left: -20px;
+`;
+
+export {
+  AbrirTags,
+  Container,
+  TagsContainer,
+  Divider,
+  ButtonContainer,
+  SinalSelecionado,
+  SinalSelecionadoContainer,
+};
