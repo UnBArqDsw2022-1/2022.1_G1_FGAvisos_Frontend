@@ -4,7 +4,7 @@ import {Tema} from '../../utils/Tema';
 interface ButtonProps{
     backgroundColor: string;
     colorFont: string;
-    width: number;
+    width?: number;
 }
 export const ButtonStyle = styled.button<ButtonProps>`
     background: ${props => props.backgroundColor};
@@ -19,6 +19,7 @@ export const ButtonStyle = styled.button<ButtonProps>`
 
     &:hover{
         cursor: pointer;
-        background-color: ${Tema.colors.$primariaEscura};
+        /*background-color: ${Tema.colors.$primariaEscura};*/
+        filter: brightness(85%);
     }
 `;
