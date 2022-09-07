@@ -2,7 +2,19 @@ import { Tema } from "../../utils/Tema";
 import styled, { css } from "styled-components";
 
 const AbrirTags = styled.div`
-  background-color: gray;
+  display: flex;
+  background-color: lightgray;
+  width: 200px;
+  border: 0.5px solid black;
+  border-radius: 7px;
+  padding: 0.5rem;
+  justify-content: space-between;
+  text-align: center;
+
+  :hover {
+    cursor: pointer;
+    opacity: 80%;
+  }
 `;
 
 const Container = styled.div`
