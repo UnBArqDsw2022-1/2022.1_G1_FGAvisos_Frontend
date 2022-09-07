@@ -14,7 +14,9 @@ const CartaoMeuPerfil: FC<CartaoMeuPerfilProps> = ({...props}) => {
 
     return(
         <Cartao>
-            <Icone style={{ backgroundImage: `url(${MeuPerfilLogo})` }}></Icone>
+            <Icone 
+                style={{ backgroundImage: `url(${MeuPerfilLogo})` }}
+            ></Icone>
             
             <DadosPerfil>
                 <TituloGenerico 
