@@ -1,6 +1,6 @@
 export const Tema = {
     fonte: {
-      familia: "Roboto",
+      familia: "Roboto, sans-serif",
       clara: 300,
       normal: 400,
       meioNegrito: 500,
@@ -21,7 +21,8 @@ export const Tema = {
       $primariaEscura: "#01579b",
       $secundaria: "#455a64",
       $secundariaClara: "#607d8b",
-      $secundariaEscura: "#37474f"
+      $secundariaEscura: "#37474f",
+      $cinzaNeutro: "#D9D9D9"
     },
   };
 
