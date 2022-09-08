@@ -10,6 +10,7 @@ interface InputProps {
     register?: any;
     onkeydown?: any;
     onChange?: any;
+    type?: string;
 }
 
 const Input: React.FC<InputProps> = ({...props}) => (
@@ -18,6 +19,7 @@ const Input: React.FC<InputProps> = ({...props}) => (
         placeholder={props.text}
         ref={props.register}
         onKeyPress={props.onkeydown}
+        type={props.type}
     />
 );
 

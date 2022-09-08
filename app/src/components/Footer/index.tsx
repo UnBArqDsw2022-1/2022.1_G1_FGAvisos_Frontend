@@ -5,10 +5,10 @@ import { FooterStyle } from './styles'
 export default function Footer({...props}) {
     return (
         <FooterStyle>
-            <div>
+            <div className='logoUnB'>
                 <a href={props.linkUNB} target="_blank">
-                    <img src={UnbLogo} alt='LogoUnb' title='UNB'/>
-                </a><br/>
+                    <img height={30} width={74} src={UnbLogo} alt='LogoUnb' title='UNB'/>
+                </a>
                 <a href={props.linkUNB} target="_blank">Universidade de Brasília</a>
             </div>
             <div>

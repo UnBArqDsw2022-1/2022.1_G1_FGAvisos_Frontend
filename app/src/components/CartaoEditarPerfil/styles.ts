@@ -18,12 +18,14 @@ export const Icone = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    >a{
+    a{
         width: 134px;
         height: 22px;        
         cursor: pointer;
         font-size: 14px;
+        text-align: center;
     }
+    
 `;
 
 export const FormularioPerfil = styled.div`

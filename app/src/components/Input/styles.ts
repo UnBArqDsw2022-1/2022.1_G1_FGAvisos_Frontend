@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import {Tema} from '../../utils/Tema';
 
 interface InputProps{
     backgroundColor: string;
@@ -18,7 +19,8 @@ export const InputStyle = styled.input<InputProps>`
     font-size: 15px;
     color: ${props => props.colorFont};;
     &::-webkit-input-placeholder {
-      color: ${props => props.colorFont};;
+      color: ${props => props.colorFont};
+      font-family: ${Tema.fonte.familia} ;
     }
 `;
 

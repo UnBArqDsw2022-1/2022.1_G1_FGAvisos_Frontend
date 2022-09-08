@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Tema } from "../../utils/Tema";
+
+
 export const Barra = styled.div`
     width: 100%;
     height: 100%;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {Tema} from '../../utils/Tema';
 
+
 interface ButtonProps {
   backgroundColor: string;
   colorFont: string;
@@ -19,8 +20,9 @@ export const ButtonStyle = styled.button<ButtonProps>`
   text-align: center;
   padding: 7px 0px 7px 0px;
 
-  &:hover {
-    cursor: pointer;
-    background-color: ${Tema.colors.$primariaEscura};
-  }
+
+    &:hover{
+        cursor: pointer;
+        filter: brightness(85%);
+    }
 `;

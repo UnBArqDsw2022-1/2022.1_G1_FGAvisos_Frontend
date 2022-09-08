@@ -8,9 +8,6 @@ export const ConteinerMaior = styled.div`
     border-radius: 10px;
     display: flex;
     background-color: ${Tema.colors.$cinzaNeutro};
-    position: relative;
-    left: 20px;
-    top:20px;
 `;
 
 export const Perfil = styled.button`

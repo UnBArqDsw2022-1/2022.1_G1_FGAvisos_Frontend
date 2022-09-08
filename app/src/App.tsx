@@ -1,13 +1,10 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import DropdownComponent from "./components/Dropdown";
+import React from 'react';
+import './App.css';
+import BarraNavegacao from './components/BarraNavegacao';
 
 function App() {
   return (
-    <>
-      <DropdownComponent optionList={[]} value={'Placeholder'}/>
-    </>
+    <BarraNavegacao />
   );
 }
 
