@@ -27,10 +27,14 @@ function PaginaLogin({...props}){
 
             <Conteudo>
                 <CaixaLogin onSubmit={handleSubmit(onSubmit)}>
+                        <TituloGenerico 
+                            titulo={'Entre em sua conta'} 
+                            tamanho={'30px'} 
+                            cor={'#fff'} />
 
                         <CampoUsuario>
                             <Input 
-                                text="Usuário/email"
+                                text="Email"
                                 backgroundColor={Tema.colors.$secundariaClara} 
                                 colorFont="white"
                                 width="493px"
@@ -49,6 +53,10 @@ function PaginaLogin({...props}){
                                 register={register('password')}
                                 ></Input>
                         </CampoSenha>
+                        
+                        <div>
+                            <a href={props.esqueciSenha}>Criar conta</a><br/><br/>
+                        </div>
 
                         <BotaoConfirmar>
                             <Button
