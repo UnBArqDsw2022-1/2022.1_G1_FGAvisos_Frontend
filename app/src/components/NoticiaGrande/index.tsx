@@ -9,6 +9,7 @@ import Tema from '../../utils/Tema';
 interface ComponentProps {
     titulo: string;
     textoNoticia: string;
+    dataHora: string;
 }
 
 const NoticiaGrande: FC<ComponentProps> = ({...props}) => {
@@ -30,7 +31,7 @@ const NoticiaGrande: FC<ComponentProps> = ({...props}) => {
                         tamanho={"28px"} 
                         cor={'white'}
                     ></TituloGenerico>
-                    <Styles.DataHora>Hora</Styles.DataHora>
+                    <Styles.DataHora>{props.dataHora}</Styles.DataHora>
                 </Styles.TituloDataEHora>
                 <TextoNoticia 
                     texto={props.textoNoticia} 
