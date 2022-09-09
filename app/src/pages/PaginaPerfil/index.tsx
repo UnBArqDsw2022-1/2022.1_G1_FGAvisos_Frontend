@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import CartaoEditarPerfil from '../../components/CartaoEditarPerfil';
 import CartaoMeuPerfil from '../../components/CartaoMeuPerfil';
-import MeuPerfil from './../../components/MeuPerfil';
-import { Editar } from './../../components/MeuPerfil/styles';
+import MeuPerfil from '../../components/MeuPerfil';
 import {Conteudo} from './styles';
 
 function PaginaPerfil(){
