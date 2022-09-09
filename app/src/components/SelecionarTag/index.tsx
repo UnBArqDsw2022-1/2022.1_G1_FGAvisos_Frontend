@@ -17,7 +17,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
   const [prova, setProva] = useState<boolean>(false);
 
   return (
-    <>
+    <Styles.TagsComponent>
       <Styles.AbrirTags
         onClick={() => {
           setMostrarTags(!mostrarTags);
@@ -48,6 +48,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 }}
               >
                 <Button
+                  type={"button"}
                   text={"MUITO URGENTE"}
                   backgroundColor={"black"}
                   colorFont={"white"}
@@ -67,6 +68,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
               ) : null}
               <div onClick={() => setUrgente(!urgente)}>
                 <Button
+                  type={"button"}
                   text={"URGENTE"}
                   backgroundColor={"red"}
                   colorFont={"white"}
@@ -90,6 +92,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 }}
               >
                 <Button
+                  type={"button"}
                   text={"IMPORTANTE"}
                   backgroundColor={"orange"}
                   colorFont={"white"}
@@ -113,6 +116,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 }}
               >
                 <Button
+                  type={"button"}
                   text={"AVISO"}
                   backgroundColor={"green"}
                   colorFont={"white"}
@@ -136,6 +140,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
                 }}
               >
                 <Button
+                  type={"button"}
                   text={"PROVA"}
                   backgroundColor={"yellow"}
                   colorFont={"black"}
@@ -147,7 +152,7 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
           </Styles.TagsContainer>
         </Styles.Container>
       ) : null}
-    </>
+    </Styles.TagsComponent>
   );
 };
 

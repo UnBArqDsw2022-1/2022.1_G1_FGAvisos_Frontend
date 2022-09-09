@@ -18,6 +18,8 @@ const AbrirTags = styled.div`
 `;
 
 const Container = styled.div`
+  position: absolute;
+  top: 50px;
   background-color: gray;
   padding: 1rem;
   width: 200px;
@@ -59,6 +61,12 @@ const SinalSelecionado = styled.div`
   left: -20px;
 `;
 
+const TagsComponent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 export {
   AbrirTags,
   Container,
@@ -67,4 +75,5 @@ export {
   ButtonContainer,
   SinalSelecionado,
   SinalSelecionadoContainer,
+  TagsComponent,
 };

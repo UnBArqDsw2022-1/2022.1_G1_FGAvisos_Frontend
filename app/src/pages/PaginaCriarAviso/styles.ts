@@ -10,7 +10,7 @@ export const CriarAviso = styled.body`
     align-items: center;
 `;
 
-export const Corpo = styled.div`
+export const Corpo = styled.form`
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -31,5 +31,9 @@ export const Conteiner = styled.div`
     Button{
         font-size: ${Tema.fonte.tamanhos.media};
         height: 100%;
+    }
+
+    select{
+        font-size: ${Tema.fonte.tamanhos.media};
     }
 `;

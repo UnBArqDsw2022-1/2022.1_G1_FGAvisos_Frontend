@@ -8,6 +8,7 @@ interface ButtonProps {
   colorFont: string;
   width: number;
   height?: number | undefined;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 const Button: React.FC<ButtonProps> = ({...props}) => 

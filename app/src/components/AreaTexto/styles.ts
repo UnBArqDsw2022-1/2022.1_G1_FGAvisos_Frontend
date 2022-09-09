@@ -7,6 +7,7 @@ export const AreaTextoEstilo = styled.textarea`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     background-color: ${Tema.colors.$secundariaClara};
+    resize: none;
     &::-webkit-input-placeholder {
       color: white;
     }

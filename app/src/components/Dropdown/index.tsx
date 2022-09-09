@@ -4,24 +4,31 @@ import {Dropdown} from './styles';
 interface DropDownProps {
   OnChangeFunction?: () => void;
   optionList: string[];
-  value: string;
+  placeholder: string
+  width: string;
+  heigth: string;
+  register?: any;
 }
 
-const DropdownComponent = ({OnChangeFunction, optionList, value}: DropDownProps) => {
+const DropdownComponent = ({OnChangeFunction, optionList, placeholder ,width, heigth, register}: DropDownProps) => {
   return (
     <>
-  <Dropdown
-    as="select"
-    onChange={OnChangeFunction}
-    value={value}
-  >
-    <option value={value} disabled selected hidden>{value}</option>
-    {optionList?.map((optionListItem, index) => (
-      <option key={index}>
-        {optionListItem}
-      </option>
-    ))}
-  </Dropdown>
+      <Dropdown
+        as="select"
+        onChange={OnChangeFunction}
+        optionList={optionList}
+        placeholder={placeholder}
+        width={width}
+        heigth={heigth}
+        {...register}
+      >
+        <option value="" disabled selected hidden>{placeholder}</option>
+        {optionList?.map((optionListItem, index) => (
+          <option key={index}>
+            {optionListItem}
+          </option>
+        ))}
+      </Dropdown>
   </>
 )};
 

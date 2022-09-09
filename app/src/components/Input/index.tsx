@@ -1,4 +1,5 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 
 import { InputStyle } from './styles';
 
@@ -13,11 +14,11 @@ interface InputProps {
     type?: string;
 }
 
-const Input: React.FC<InputProps> = ({...props}) => (
+const Input: React.FC<InputProps> = ({ register, ...props}) => (
     <InputStyle
         {...props}
+        {...register}
         placeholder={props.text}
-        ref={props.register}
         onKeyPress={props.onkeydown}
         type={props.type}
     />

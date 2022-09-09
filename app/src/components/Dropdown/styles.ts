@@ -1,14 +1,22 @@
 import styled from "styled-components";
+import {Tema} from '../../utils/Tema';
 
-export const Dropdown = styled.select`
-    width: 285px;
-    height: 51px;
-    background: #607D8B;
+interface DropDownProps {
+    OnChangeFunction?: () => void;
+    optionList: string[];
+    width: string;
+    heigth: string
+}
 
-    border-radius: 10px;
+export const Dropdown = styled.select<DropDownProps>`
+    width: ${props => props.width};
+    height: ${props => props.heigth};
+    background: ${Tema.colors.$secundariaClara};
+    border-radius: 5px;
     color: #fff;
-    font-size: 25px;
-
+    font-size: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 50%);
     display: flex;
-    text-align: center;
+    text-align: start;
+    padding: 7px 0px 7px 10px;
 `;
