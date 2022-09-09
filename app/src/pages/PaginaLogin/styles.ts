@@ -19,8 +19,8 @@ export const Conteudo = styled.div`
     justify-content: center;
 `;
 
-export const CaixaLogin = styled.div`
-    height: 424px;
+export const CaixaLogin = styled.form`
+    height: 370px;
     width: 630px;
     background-color: ${Tema.colors.$primariaEscura};
     border: 0.5px;
