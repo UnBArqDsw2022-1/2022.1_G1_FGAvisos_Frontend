@@ -11,13 +11,11 @@ export default function Footer({...props}) {
                 </a>
                 <a href={props.linkUNB} target="_blank">Universidade de Brasília</a>
             </div>
-            <div>
-                <a href={props.contactUS}>Formas de contato</a><br/><br/>
-                <a href={props.moreInfo}>Mais Informações</a><br/>
-            </div>
-            <div>
-                <a href={props.aboutFGAvisos}>Sobre FGAvisos</a><br/><br/>
-                <a href={props.aboutUs}>Sobre a equipe</a><br/>
+            <div className='links'>
+                <a className='item-link' href={props.contactUS}>Formas de contato</a>
+                <a className='item-link' href={props.moreInfo}>Mais Informações</a>
+                <a  className='item-link'href={props.aboutFGAvisos}>Sobre FGAvisos</a>
+                <a  className='item-link'href={props.aboutUs}>Sobre a equipe</a>
             </div>
         </FooterStyle>
     )
