@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import AreaTexto from '../../components/AreaTexto';
-import BarraNavegacao from '../../components/barraNavegacao';
+import BarraNavegacao from '../../components/BarraNavegacao';
 import Button from '../../components/Button';
 import DropdownComponent from '../../components/Dropdown';
 import Footer from '../../components/Footer';
@@ -32,7 +32,7 @@ const PaginaCriarAviso: React.FC = () => {
 
   return (
         <CriarAviso>
-            {/* <BarraNavegacao/> */}
+            <BarraNavegacao/>
             <Corpo onSubmit={handleSubmit(onSubmit)}>
                 <Conteiner>
                     <TituloGenerico 
