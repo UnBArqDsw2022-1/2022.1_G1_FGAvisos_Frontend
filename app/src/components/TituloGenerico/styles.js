@@ -8,6 +8,7 @@ const Titulo = styled.span`
   line-height: 36px;
   color: ${(props) => props.cor};
   font-size: ${(props) => props.tamanho};
+  margin: 20px;
 `;
 
 export default Titulo;
