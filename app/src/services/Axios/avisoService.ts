@@ -64,7 +64,7 @@ export async function editAviso(
     idAviso: string
 ) {
     try {
-        const response = await BASE_API.post(`aviso/${idAviso}`, {
+        const response = await BASE_API.put(`aviso/${idAviso}`, {
             username: username,
             password: password
         });
@@ -84,7 +84,7 @@ export async function deleteAviso(
     idAviso: string
 ) {
     try {
-        const response = await BASE_API.post(`aviso/${idAviso}`, {
+        const response = await BASE_API.delete(`aviso/${idAviso}`, {
             username: username,
             password: password
         });
@@ -104,7 +104,7 @@ export async function getAvisoByProfessor(
     idProfessor: string
 ) {
     try {
-        const response = await BASE_API.post(`aviso/${idProfessor}` , {
+        const response = await BASE_API.get(`aviso/${idProfessor}` , {
             username: username,
             password: password
         });

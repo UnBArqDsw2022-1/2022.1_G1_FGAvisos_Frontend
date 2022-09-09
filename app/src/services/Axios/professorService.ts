@@ -5,7 +5,7 @@ export async function professorLogin(
     password: string 
 ) {
     try {
-        const response = await BASE_API.get('professor/login', {
+        const response = await BASE_API.post('professor/login', {
             username: username,
             password: password
         });
@@ -81,7 +81,7 @@ export async function deleteProfessor(
     password: string 
 ) {
     try {
-        const response = await BASE_API.post('professor/', {
+        const response = await BASE_API.delete('professor/', {
             username: username,
             password: password
         });
@@ -101,7 +101,7 @@ export async function getOneProfessor(
     id: string
 ) {
     try {
-        const response = await BASE_API.post(`professor/${id}`, {
+        const response = await BASE_API.get(`professor/${id}`, {
             username: username,
             password: password
         });

@@ -139,7 +139,7 @@ export async function getTurmasRegistradasAluno(
     password: string 
 ) {
     try {
-        const response = await BASE_API.post('aluno/turmas/registradas', {
+        const response = await BASE_API.get('aluno/turmas/registradas', {
             username: username,
             password: password
         });
@@ -158,7 +158,7 @@ export async function getAlunosVinculados(
     password: string 
 ) {
     try {
-        const response = await BASE_API.post('aluno/avisos/vinculados', {
+        const response = await BASE_API.get('aluno/avisos/vinculados', {
             username: username,
             password: password
         });
