@@ -9,10 +9,12 @@ const Rotas = () => {
     return (
         <BrowserRouter>
             <BarraNavegacao/>
+            <br />
             <Routes>
                 <Route path="/login" element={<LoginScreen />} />
                 <Route path="/perfil" element={<Perfil />} />
             </Routes>
+            <br />
             <Footer/>
         </BrowserRouter>
     );
