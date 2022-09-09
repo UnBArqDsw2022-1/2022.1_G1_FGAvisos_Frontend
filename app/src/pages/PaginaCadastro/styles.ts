@@ -7,6 +7,7 @@ export const Corpo = styled.body`
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 `;
 
 export const CaixaCadastro = styled.div`

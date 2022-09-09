@@ -9,7 +9,7 @@ import {
         SelecaoUsuario
         } from './styles';
 import Input from '../../components/Input';
-import Tema from '../../utils/Tema';
+import {Tema} from '../../utils/Tema';
 import DropdownComponent from '../../components/Dropdown';
 import Button from '../../components/Button';
 
