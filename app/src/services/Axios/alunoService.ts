@@ -6,8 +6,8 @@ export async function loginAluno(
 ) {
     try {
         const response = await BASE_API.post('aluno/login', {
-            username: username,
-            password: password
+            username,
+            password
         });
         return response;
     } catch (error: any) {
@@ -20,13 +20,11 @@ export async function loginAluno(
 }
 
 export async function alunoLogado(
-    username: string, 
-    password: string 
+    token: string
 ) {
     try {
         const response = await BASE_API.get('aluno/logado', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -39,13 +37,10 @@ export async function alunoLogado(
 }
 
 export async function getAlunos(
-    username: string, 
-    password: string 
 ) {
     try {
         const response = await BASE_API.get('aluno/', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -58,13 +53,11 @@ export async function getAlunos(
 }
 
 export async function editAluno(
-    username: string, 
-    password: string 
+    token: string
 ) {
     try {
         const response = await BASE_API.put('aluno/', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -82,8 +75,8 @@ export async function cadastraAlunoTurma(
 ) {
     try {
         const response = await BASE_API.post('aluno/', {
-            username: username,
-            password: password
+            username,
+            password
         });
         return response;
     } catch (error: any) {
@@ -96,13 +89,10 @@ export async function cadastraAlunoTurma(
 }
 
 export async function deleteAluno(
-    username: string, 
-    password: string 
+    token: string
 ) {
     try {
         const response = await BASE_API.delete('aluno/', {
-            username: username,
-            password: password
         });
         return response;
     } catch (error: any) {
@@ -121,8 +111,7 @@ export async function getOneAluno(
 ) {
     try {
         const response = await BASE_API.get(`aluno/${idAluno}`, {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -140,8 +129,7 @@ export async function getTurmasRegistradasAluno(
 ) {
     try {
         const response = await BASE_API.get('aluno/turmas/registradas', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -159,8 +147,7 @@ export async function getAlunosVinculados(
 ) {
     try {
         const response = await BASE_API.get('aluno/avisos/vinculados', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {

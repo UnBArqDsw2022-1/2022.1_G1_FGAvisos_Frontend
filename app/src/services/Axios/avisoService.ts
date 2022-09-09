@@ -1,13 +1,10 @@
 import { BASE_API } from './baseService';
 
-export async function getAviso(
-    username: string, 
-    password: string 
+export async function getAviso( 
 ) {
     try {
         const response = await BASE_API.get('aviso/', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -19,14 +16,11 @@ export async function getAviso(
     return false;
 }
 
-export async function postAviso(
-    username: string, 
-    password: string 
+export async function postAviso( 
 ) {
     try {
         const response = await BASE_API.post('aviso/', {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -39,14 +33,11 @@ export async function postAviso(
 }
 
 export async function getOneAviso(
-    username: string, 
-    password: string,
     idAviso: string
 ) {
     try {
         const response = await BASE_API.get(`aviso/${idAviso}`, {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -59,14 +50,11 @@ export async function getOneAviso(
 }
 
 export async function editAviso(
-    username: string, 
-    password: string,
     idAviso: string
 ) {
     try {
         const response = await BASE_API.put(`aviso/${idAviso}`, {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -79,14 +67,11 @@ export async function editAviso(
 }
 
 export async function deleteAviso(
-    username: string, 
-    password: string,
     idAviso: string
 ) {
     try {
         const response = await BASE_API.delete(`aviso/${idAviso}`, {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
@@ -99,14 +84,11 @@ export async function deleteAviso(
 }
 
 export async function getAvisoByProfessor(
-    username: string, 
-    password: string,
     idProfessor: string
 ) {
     try {
         const response = await BASE_API.get(`aviso/${idProfessor}` , {
-            username: username,
-            password: password
+
         });
         return response;
     } catch (error: any) {
