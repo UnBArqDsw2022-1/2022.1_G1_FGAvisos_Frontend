@@ -1,12 +1,10 @@
 import React from 'react';
-import './App.css';
-import BarraNavegacao from './components/BarraNavegacao';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Rotas from './routes';
 
-function App() {
-  return (
-    <BarraNavegacao />
+const App = () => {
+  return ( 
+    <Rotas/>
   );
-}
+};
 
 export default App;
