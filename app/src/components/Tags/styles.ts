@@ -5,12 +5,13 @@ interface TagProps{
     colorFont: string;
     width: number;
 }
-export const TagStyle = styled.span<TagProps>`
-    background: ${props => props.backgroundColor};
+export const TagStyle = styled.div<TagProps>`
+    display: inline-table;
+    background-color: ${props => props.backgroundColor};
     color: ${props => props.colorFont};
-    width: ${props => props.width}px;
     border-radius: 10px;
     text-align: center;
-    height: 40px;
-    padding: 7px 7px 7px 7px;
+    height: 16px;
+    padding: 7px;
+    margin-left: 0.5rem;
 `;

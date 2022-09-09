@@ -22,7 +22,8 @@ export const Tema = {
       $secundaria: "#455a64",
       $secundariaClara: "#607d8b",
       $secundariaEscura: "#37474f",
-      $cinzaNeutro: "#D9D9D9"
+      $cinzaNeutro: "#D9D9D9",
+      $cinzaCard: "#2F2E2E"
     },
   };
 
