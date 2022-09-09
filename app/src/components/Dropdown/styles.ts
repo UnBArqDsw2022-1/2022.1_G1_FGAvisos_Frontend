@@ -4,7 +4,6 @@ import {Tema} from '../../utils/Tema';
 interface DropDownProps {
     OnChangeFunction?: () => void;
     optionList: string[];
-    value: string;
     width: string;
     heigth: string
 }

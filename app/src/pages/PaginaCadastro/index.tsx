@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
         Corpo, 
         CaixaCadastro, 
@@ -14,6 +14,7 @@ import DropdownComponent from '../../components/Dropdown';
 import Button from '../../components/Button';
 
 function PaginaCadastro(){
+    const options = ["Professor", "Aluno", "Coordenador"]
 
     return(
         <Corpo>
@@ -59,8 +60,8 @@ function PaginaCadastro(){
 
                 <SelecaoUsuario>
                     <DropdownComponent
-                        optionList={["Professor", "Aluno", "Coordenador"]}
-                        value={"Selecione o tipo de usuário"}
+                        optionList={options}
+                        placeholder={"Selecione o tipo de usuário"}
                         width={"493px"}
                         heigth={"54px"}
                     ></DropdownComponent>
