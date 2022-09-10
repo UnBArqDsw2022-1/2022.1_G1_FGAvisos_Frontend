@@ -8,7 +8,7 @@ const styles = {
     },
 
     navbar: {
-        backgroundColor: 'black',
+        backgroundColor: `${Tema.colors.$primariaEscura}`,
         height: '75px',
         alignItems: 'center',
         display: 'flex',
@@ -25,11 +25,10 @@ const styles = {
     Barra: {
         width: '100%',
         height: '100%',
-        backgroundColor: "#01579b",
+        backgroundColor: `${Tema.colors.$primariaEscura}`,
     }, 
 
     navbarText: {
-        fontFamily: 'Montserrat',
         fontSize: '2vh',
         marginLeft: '2vh',
         fontWeight: 'bold',

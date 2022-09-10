@@ -13,6 +13,9 @@ export const FooterStyle = styled.section`
     align-items: center;
     position: relative;
     bottom: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     .links{
         display: grid;
         grid-template-columns: auto auto;

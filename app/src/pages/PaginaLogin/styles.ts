@@ -9,7 +9,8 @@ export const Corpo = styled.body`
     scroll-snap-type: y mandatory;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Conteudo = styled.div`

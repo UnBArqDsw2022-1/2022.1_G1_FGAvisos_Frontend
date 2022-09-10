@@ -5,18 +5,18 @@ import Perfil from '../pages/PaginaPerfil';
 import BarraNavegacao from '../components/BarraNavegacao';
 import Footer from '../components/Footer';
 import PaginaAvisos from '../pages/PaginaAvisos';
+import PaginaCadastro from '../pages/PaginaCadastro';
 
 const Rotas = () => {
     return (
         <BrowserRouter>
             <BarraNavegacao/>
-            <br />
             <Routes>
-                <Route path="/login" element={<LoginScreen />} />
                 <Route path="/perfil" element={<Perfil />} />
-                <Route path="/paginaInicial" element={<PaginaAvisos/>} />
+                <Route path="/login" element={<LoginScreen />} />
+                <Route path="/cadastro" element={<PaginaCadastro />} />
+                <Route path="/" element={<PaginaAvisos/>} />
             </Routes>
-            <br />
             <Footer/>
         </BrowserRouter>
     );

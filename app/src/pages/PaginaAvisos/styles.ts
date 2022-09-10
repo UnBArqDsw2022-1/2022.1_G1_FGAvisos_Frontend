@@ -1,22 +1,25 @@
 import styled from 'styled-components';
 
 export const Corpo = styled.body`
+    margin-top: 80px;
     height: auto;
     width: 100%;
     /*overflow-y: scroll;
     scroll-snap-type: y mandatory;*/
     display: flex;
     flex-direction: column;
+    margin-bottom: 70px;
 `;
 
 
 export const BuscaEFiltro = styled.div`
-    height: 55px;
+    height: auto;
     width: 35%;
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 15px;
     align-self: center;
+    margin-right: 15%;
 `;
 
 
