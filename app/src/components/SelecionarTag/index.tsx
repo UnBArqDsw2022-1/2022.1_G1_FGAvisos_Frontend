@@ -6,7 +6,11 @@ import Button from "../Button/index"
 
 import * as Styles from "./styles";
 
-const SelecionarTag: FC<any> = ({ ...props }) => {
+interface SelecionarTagProps {
+  setTag(str: string): void;
+}
+
+const SelecionarTag: FC<SelecionarTagProps> = ({ ...props }) => {
 
   const [mostrarTags, setMostrarTags] = useState<boolean>(false);
 
@@ -16,11 +20,21 @@ const SelecionarTag: FC<any> = ({ ...props }) => {
   const [aviso, setAviso] = useState<boolean>(false);
   const [prova, setProva] = useState<boolean>(false);
 
+  function returnTags(): string{
+    let str: string = '';
+    if(muitoUrgente) str = str.concat("MUITO URGENTE,");
+    if(urgente) str = str.concat("URGENTE,");
+    if(importante) str = str.concat("IMPORTANTE,");
+    if(aviso) str = str.concat("AVISO,");
+    if(prova) str = str.concat("PROVA");
+    return str;
+  }
   return (
     <Styles.TagsComponent>
       <Styles.AbrirTags
         onClick={() => {
           setMostrarTags(!mostrarTags);
+          props.setTag(returnTags());
         }}
       >
         <span>TAGS</span>

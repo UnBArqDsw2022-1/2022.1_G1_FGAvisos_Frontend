@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import AreaTexto from '../../components/AreaTexto';
-import BarraNavegacao from '../../components/BarraNavegacao';
 import Button from '../../components/Button';
 import DropdownComponent from '../../components/Dropdown';
 import Footer from '../../components/Footer';
@@ -14,32 +13,27 @@ import { CriarAviso, Corpo, Conteiner } from './styles';
 
 const PaginaCriarAviso: React.FC = () => {
     const { register, handleSubmit } = useForm();
-    //const [tag, setTag] = useState<string>("");
+    const [tag, setTag] = useState<string>("");
 
-    function setTag(str:string){
-        console.log(str)
-    }
     function onSubmit(data: any){
         const body = {
             titulo: data.titulo,
             corpo: data.corpoAviso,
             autor: data.autor,
             turma: data.turma,
-           // tag: tag,
+            tag: tag,
         };
-        console.log(body)
     }
 
   return (
         <CriarAviso>
-            <BarraNavegacao/>
             <Corpo onSubmit={handleSubmit(onSubmit)}>
                 <Conteiner>
                     <TituloGenerico 
                         titulo={'Título'} 
                         tamanho={Tema.fonte.tamanhos.media} 
                         cor={'black'}/>
-                    <SelecionarTag tag={setTag}/>
+                    <SelecionarTag setTag={setTag}/>
                 </Conteiner>
                 <Input
                     text={'Título do aviso'}
@@ -83,7 +77,6 @@ const PaginaCriarAviso: React.FC = () => {
                         />
                 </Conteiner>
             </Corpo>
-            <Footer/>
         </CriarAviso>
   );
 }

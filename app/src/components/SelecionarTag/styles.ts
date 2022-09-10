@@ -19,7 +19,7 @@ const AbrirTags = styled.div`
 
 const Container = styled.div`
   position: absolute;
-  top: 50px;
+  top: 150px;
   background-color: gray;
   padding: 1rem;
   width: 200px;
