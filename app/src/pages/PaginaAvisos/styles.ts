@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Corpo = styled.body`
-    height: 100vh;
+    height: auto;
     width: 100%;
     /*overflow-y: scroll;
     scroll-snap-type: y mandatory;*/
@@ -11,21 +11,32 @@ export const Corpo = styled.body`
 
 
 export const BuscaEFiltro = styled.div`
-    height: 70px;
-    width: 100%;
+    height: 55px;
+    width: 35%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    align-self: center;
 `;
 
 
 export const ConteinerNoticiaGrande = styled.div`
     width: 1000px;
-    height: 222px;
+    height: auto;
+    align-self:center ;
+    margin-top: 15px;
 `;
 
 export const ConteinerNoticiasPequenas = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 30px;
+    grid-column-gap: 30px;
+    align-self: center;
+    /*display:flex;
     width: 100%;
-    height: 500px;
-
+    height: auto;
+    justify-content: center;
+    align-self: center;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
 `;

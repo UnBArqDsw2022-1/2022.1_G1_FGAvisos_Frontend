@@ -4,6 +4,7 @@ import LoginScreen from '../pages/PaginaLogin';
 import Perfil from '../pages/PaginaPerfil';
 import BarraNavegacao from '../components/BarraNavegacao';
 import Footer from '../components/Footer';
+import PaginaAvisos from '../pages/PaginaAvisos';
 
 const Rotas = () => {
     return (
@@ -12,6 +13,7 @@ const Rotas = () => {
             <Routes>
                 <Route path="/login" element={<LoginScreen />} />
                 <Route path="/perfil" element={<Perfil />} />
+                <Route path="/paginaInicial" element={<PaginaAvisos/>} />
             </Routes>
             <Footer/>
         </BrowserRouter>

@@ -16,7 +16,7 @@ function PaginaAvisos(){
             <BuscaEFiltro>
                 <CaixaBusca/>
                 <DropdownComponent
-                    width={"inherit"}
+                    width={"120px"}
                     heigth={"inherit"}
                     optionList={["opção1", "opção2","opção3"]}
                     placeholder={"Filtrar por"}
@@ -46,3 +46,6 @@ function PaginaAvisos(){
         </Corpo>
     )
 }
+
+
+export default PaginaAvisos;

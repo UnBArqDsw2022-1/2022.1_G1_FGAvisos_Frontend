@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-
 export const Conteudo = styled.div`
     width: 100%;
-    height: 420px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     a{
         width: 694px;

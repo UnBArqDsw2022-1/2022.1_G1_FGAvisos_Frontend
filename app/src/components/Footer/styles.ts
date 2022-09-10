@@ -11,7 +11,7 @@ export const FooterStyle = styled.section`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0px;
     .links{
         display: grid;
