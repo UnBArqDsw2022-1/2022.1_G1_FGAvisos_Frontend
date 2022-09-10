@@ -13,13 +13,13 @@ interface InputProps {
     type?: string;
 }
 
-const Input: React.FC<InputProps> = ({...props}) => (
+const Input: React.FC<InputProps> = ({register, ...props}) => (
     <InputStyle
         {...props}
         placeholder={props.text}
-        ref={props.register}
         onKeyPress={props.onkeydown}
         type={props.type}
+        {...register}
     />
 );
 

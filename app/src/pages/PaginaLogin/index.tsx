@@ -1,61 +1,77 @@
 import React from 'react';
+import { useForm } from "react-hook-form";
 import {Corpo, CaixaLogin, Conteudo, CampoUsuario, CampoSenha, BotaoConfirmar} from './styles';
 import Footer from '../../components/Footer';
 import Input from '../../components/Input';
 import Tema from '../../utils/Tema';
 import Button from '../../components/Button';
+import TituloGenerico from '../../components/TituloGenerico';
 
-
+type Inputs = {
+    email: string,
+    password: string,
+  };
+  
 function PaginaLogin({...props}){
 
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
 
+    const onSubmit = (data: any) => console.log(data) 
+    
+    // const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    // const onSubmit = data => console.log(data);
 
     return(
 
         <Corpo>
 
             <Conteudo>
-                <CaixaLogin>
+                <CaixaLogin onSubmit={handleSubmit(onSubmit)}>
+                        <TituloGenerico 
+                            titulo={'Entre em sua conta'} 
+                            tamanho={'30px'} 
+                            cor={'#fff'} />
 
-                    <CampoUsuario>
-                        <Input 
-                            text={"Usuário/email"} 
-                            backgroundColor={Tema.colors.$secundariaClara} 
-                            colorFont={"white"}
-                            width={"493px"}
-                        ></Input>
-                    </CampoUsuario>
+                        <CampoUsuario>
+                            <Input 
+                                text="Email"
+                                backgroundColor={Tema.colors.$secundariaClara} 
+                                colorFont="white"
+                                width="493px"
+                                type="text"
+                                register={register("email")}
+                                ></Input>
+                        </CampoUsuario>
+                        
+                        <CampoSenha>
+                            <Input
+                                text="Senha"
+                                backgroundColor={Tema.colors.$secundariaClara}
+                                colorFont="white"
+                                width="493px"
+                                type="password"
+                                register={register('password')}
+                                ></Input>
+                        </CampoSenha>
+                        
+                        <div>
+                            <a href={props.esqueciSenha}>Criar conta</a><br/><br/>
+                        </div>
 
-                    
-                    <CampoSenha>
-                        <Input
-                            text={"Senha"}
-                            backgroundColor={Tema.colors.$secundariaClara}
-                            colorFont={"white"}
-                            width={"493px"}
-                            type={"password"}
-                        ></Input>
-                    </CampoSenha>
-                    
-                    <div>
-                        <a href={props.esqueciSenha}>Esqueci a senha?</a><br/><br/>
-                    </div>
-
-                    <BotaoConfirmar>
-                        <Button
-                            text={"Confirmar"}
-                            backgroundColor={Tema.colors.$secundariaClara}
-                            colorFont={"white"}
-                            width = {203}
-                        ></Button>
-                    </BotaoConfirmar>
-                    
+                        <BotaoConfirmar>
+                            <Button
+                                text="Confirmar"
+                                backgroundColor={Tema.colors.$secundariaClara}
+                                colorFont="white"
+                                width={203}
+                                type="submit"
+                                ></Button>
+                        </BotaoConfirmar>                    
                 </CaixaLogin>
             </Conteudo>
     
             <Footer></Footer>
         </Corpo>
-
     );
 }
 
