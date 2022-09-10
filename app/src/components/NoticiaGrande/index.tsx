@@ -28,14 +28,14 @@ const NoticiaGrande: FC<ComponentProps> = ({...props}) => {
                 <Styles.TituloDataEHora>
                     <TituloGenerico 
                         titulo={props.titulo} 
-                        tamanho={"28px"} 
+                        tamanho={"40px"} 
                         cor={'white'}
                     ></TituloGenerico>
                     <Styles.DataHora>{props.dataHora}</Styles.DataHora>
                 </Styles.TituloDataEHora>
                 <TextoNoticia 
                     texto={props.textoNoticia} 
-                    tamanhoTexto={"12px"} 
+                    tamanhoTexto={"20px"} 
                     corTexto={"white"} 
                     largura={"100%"} 
                     altura={"234px"}

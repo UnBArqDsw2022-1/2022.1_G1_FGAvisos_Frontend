@@ -9,13 +9,18 @@ export const FooterStyle = styled.section`
     font-size: ${Tema.fonte.tamanhos.xxPequena};
     font-weight: ${Tema.fonte.clara};
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-
-
-    div{
-        padding-left: 50px;
-        padding-right: 50px;
+    position: relative;
+    bottom: 0px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    .links{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        row-gap: 10px;
     }
     .logoUnB{
         display: flex;
@@ -24,9 +29,9 @@ export const FooterStyle = styled.section`
         height: 90%;
         justify-content: center ;
     }
+    
     a {
         color: white;
     }
-
 `;
 

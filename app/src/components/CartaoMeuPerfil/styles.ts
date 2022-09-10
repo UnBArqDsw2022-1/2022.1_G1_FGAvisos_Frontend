@@ -10,6 +10,7 @@ export const Cartao = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 `;
 
 export const Icone = styled.div`

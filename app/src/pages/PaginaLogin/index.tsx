@@ -53,7 +53,6 @@ function PaginaLogin({...props}){
                 </CaixaLogin>
             </Conteudo>
     
-            <Footer></Footer>
         </Corpo>
 
     );
